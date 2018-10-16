@@ -1,0 +1,32 @@
+<?php
+    require "session.php";
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <!-- Praticamente annullano tutti gli stili preimpostati, così da avere una tela bianca su cui creare il nostro Design.-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Home</title>
+</head>
+<body>
+
+<header class="header clearfix">
+  <a href="" class="header_logo"><img src="Logo.jpg" width="40px" height="40px"></a>
+  <ul class="header_menu">
+    <li class="header_menu_item"><a href="logout.php"><?php
+    echo "[$_SESSION[email] logout]"?></a></li>
+    <li class="header_menu_item"><a href="registrazione.html">Registrazione</a></li>
+    <li class="header_menu_item"><a href="info.html">Info</a></li>
+  </ul>
+</header>
+
+<section class="cover">
+   <div class="cover_caption">
+      <h2>Codice Sorgente del Sito:</h2><br>
+      <a href="https://github.com/Betsparco/Sito-esame" accesskey="h" terget="_blank">Clicca qui per il codice sorgente</a>
+   </div>
+</section>
+</body>
+</html>

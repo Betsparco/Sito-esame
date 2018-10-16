@@ -1,0 +1,54 @@
+html,body{height: 100%;}
+body{ background: #eeee;}
+
+
+/*----------------------
+      Header
+----------------------*/
+.header{background: #333}
+.header_logo{color: #fff; float: left; padding: 15px;}
+.header_menu{float: right; margin: 0; padding: 0;}
+.header_menu_item{display: inline-block;}
+.header_menu_item a{color: #fff; display: block; padding: 15px;}
+.header_menu_item a:hover{background: #000}
+.header_menu_item_t {width: 100%; float: right; margin: 0; padding: 0; border-top: 1px solid black;}
+.header_menu_item_t ul{margin: 0; padding: 0; list-style-type: none;}
+.header_menu_item_t li{width:100px; float:left; margin: 0; padding: 0; border-right: 1px solid black; color:black;}
+.header_menu_item_t a{display: block; padding: 5px; color: #000; text-decoration: none;}
+.header_menu_item_t a:hover{background-color: #000033; color: #FFFFFF; text-decoration: none;}
+.header_menu_item_t li ul{display: none;}
+.header_menu_item_t li:hover ul{display: block; position: absolute; z-index:1; width:150px; padding: 0; margin: 0 0 0 -1px; border:1px solid black; background: white;}
+.header_menu_item_t li li   { border:none; width:150px; }
+.header_menu_item_t li li a { padding:2px 2px 2px 10px; }
+
+/*----------------------
+      Cover
+----------------------*/
+.cover{height: 100%;
+  background-image: url(markus-spiske-221494-unsplash.jpg);
+  background-size: cover;
+  -moz-background-size: cover;
+  background-position: center;
+}
+
+.cover_caption{
+  display: table;
+  height: 100%;
+  width: 100%;
+  color: #fff;
+}
+
+
+/*----------------------
+      Clear
+----------------------*/
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 *
